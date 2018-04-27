@@ -5,7 +5,7 @@ package org.ryan.rxkotlin.stream
  * @Hangzhou Youzan Technology Co.Ltd
  * @date 2018/4/27
  */
-interface Subscriber<T> {
+interface Subscriber<in T> {
     fun onSubscribe(subscription: Subscription)
     fun onNext(element: T)
     fun onError(throwable: Throwable)
